@@ -1,0 +1,1589 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0525.0851                               -->
+<workbook original-version='18.1' source-build='2022.1.2 (20221.22.0525.0851)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='FuelEconomy-gov-VehicleData_20220907' inline='true' name='federated.1cwbj5b1hhneja1226q7015sc1u6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='FuelEconomy-gov-VehicleData_20220907' name='textscan.01oimge0hx2azx17wtf4k0fz9nuu'>
+            <connection class='textscan' directory='O:/OneDrive/Documents/GitHub/ADS500A-Modeling-Tailpipe-CO2/DataIO' filename='FuelEconomy-gov-VehicleData_20220907.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.01oimge0hx2azx17wtf4k0fz9nuu' name='FuelEconomy-gov-VehicleData_20220907.csv' table='[FuelEconomy-gov-VehicleData_20220907#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='barrels08' ordinal='0' />
+            <column datatype='real' name='barrelsA08' ordinal='1' />
+            <column datatype='real' name='charge120' ordinal='2' />
+            <column datatype='real' name='charge240' ordinal='3' />
+            <column datatype='integer' name='city08' ordinal='4' />
+            <column datatype='real' name='city08U' ordinal='5' />
+            <column datatype='integer' name='cityA08' ordinal='6' />
+            <column datatype='real' name='cityA08U' ordinal='7' />
+            <column datatype='real' name='cityCD' ordinal='8' />
+            <column datatype='real' name='cityE' ordinal='9' />
+            <column datatype='real' name='cityUF' ordinal='10' />
+            <column datatype='integer' name='co2' ordinal='11' />
+            <column datatype='integer' name='co2A' ordinal='12' />
+            <column datatype='real' name='co2TailpipeAGpm' ordinal='13' />
+            <column datatype='real' name='co2TailpipeGpm' ordinal='14' />
+            <column datatype='integer' name='comb08' ordinal='15' />
+            <column datatype='real' name='comb08U' ordinal='16' />
+            <column datatype='integer' name='combA08' ordinal='17' />
+            <column datatype='real' name='combA08U' ordinal='18' />
+            <column datatype='real' name='combE' ordinal='19' />
+            <column datatype='real' name='combinedCD' ordinal='20' />
+            <column datatype='real' name='combinedUF' ordinal='21' />
+            <column datatype='integer' name='cylinders' ordinal='22' />
+            <column datatype='real' name='displ' ordinal='23' />
+            <column datatype='string' name='drive' ordinal='24' />
+            <column datatype='integer' name='engId' ordinal='25' />
+            <column datatype='string' name='eng_dscr' ordinal='26' />
+            <column datatype='integer' name='feScore' ordinal='27' />
+            <column datatype='integer' name='fuelCost08' ordinal='28' />
+            <column datatype='integer' name='fuelCostA08' ordinal='29' />
+            <column datatype='string' name='fuelType' ordinal='30' />
+            <column datatype='string' name='fuelType1' ordinal='31' />
+            <column datatype='integer' name='ghgScore' ordinal='32' />
+            <column datatype='integer' name='ghgScoreA' ordinal='33' />
+            <column datatype='integer' name='highway08' ordinal='34' />
+            <column datatype='real' name='highway08U' ordinal='35' />
+            <column datatype='integer' name='highwayA08' ordinal='36' />
+            <column datatype='real' name='highwayA08U' ordinal='37' />
+            <column datatype='real' name='highwayCD' ordinal='38' />
+            <column datatype='real' name='highwayE' ordinal='39' />
+            <column datatype='real' name='highwayUF' ordinal='40' />
+            <column datatype='integer' name='hlv' ordinal='41' />
+            <column datatype='integer' name='hpv' ordinal='42' />
+            <column datatype='integer' name='id' ordinal='43' />
+            <column datatype='integer' name='lv2' ordinal='44' />
+            <column datatype='integer' name='lv4' ordinal='45' />
+            <column datatype='string' name='make' ordinal='46' />
+            <column datatype='string' name='model' ordinal='47' />
+            <column datatype='string' name='mpgData' ordinal='48' />
+            <column datatype='boolean' name='phevBlended' ordinal='49' />
+            <column datatype='integer' name='pv2' ordinal='50' />
+            <column datatype='integer' name='pv4' ordinal='51' />
+            <column datatype='integer' name='range' ordinal='52' />
+            <column datatype='real' name='rangeCity' ordinal='53' />
+            <column datatype='real' name='rangeCityA' ordinal='54' />
+            <column datatype='real' name='rangeHwy' ordinal='55' />
+            <column datatype='real' name='rangeHwyA' ordinal='56' />
+            <column datatype='string' name='trany' ordinal='57' />
+            <column datatype='real' name='UCity' ordinal='58' />
+            <column datatype='real' name='UCityA' ordinal='59' />
+            <column datatype='real' name='UHighway' ordinal='60' />
+            <column datatype='real' name='UHighwayA' ordinal='61' />
+            <column datatype='string' name='VClass' ordinal='62' />
+            <column datatype='integer' name='year' ordinal='63' />
+            <column datatype='integer' name='youSaveSpend' ordinal='64' />
+            <column datatype='boolean' name='guzzler' ordinal='65' />
+            <column datatype='string' name='trans_dscr' ordinal='66' />
+            <column datatype='boolean' name='tCharger' ordinal='67' />
+            <column datatype='string' name='sCharger' ordinal='68' />
+            <column datatype='string' name='atvType' ordinal='69' />
+            <column datatype='string' name='fuelType2' ordinal='70' />
+            <column datatype='string' name='rangeA' ordinal='71' />
+            <column datatype='string' name='evMotor' ordinal='72' />
+            <column datatype='string' name='mfrCode' ordinal='73' />
+            <column datatype='string' name='c240Dscr' ordinal='74' />
+            <column datatype='real' name='charge240b' ordinal='75' />
+            <column datatype='string' name='c240bDscr' ordinal='76' />
+            <column datatype='string' name='createdOn' ordinal='77' />
+            <column datatype='string' name='modifiedOn' ordinal='78' />
+            <column datatype='string' name='startStop' ordinal='79' />
+            <column datatype='integer' name='phevCity' ordinal='80' />
+            <column datatype='integer' name='phevHwy' ordinal='81' />
+            <column datatype='integer' name='phevComb' ordinal='82' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.01oimge0hx2azx17wtf4k0fz9nuu' name='FuelEconomy-gov-VehicleData_20220907.csv' table='[FuelEconomy-gov-VehicleData_20220907#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='barrels08' ordinal='0' />
+            <column datatype='real' name='barrelsA08' ordinal='1' />
+            <column datatype='real' name='charge120' ordinal='2' />
+            <column datatype='real' name='charge240' ordinal='3' />
+            <column datatype='integer' name='city08' ordinal='4' />
+            <column datatype='real' name='city08U' ordinal='5' />
+            <column datatype='integer' name='cityA08' ordinal='6' />
+            <column datatype='real' name='cityA08U' ordinal='7' />
+            <column datatype='real' name='cityCD' ordinal='8' />
+            <column datatype='real' name='cityE' ordinal='9' />
+            <column datatype='real' name='cityUF' ordinal='10' />
+            <column datatype='integer' name='co2' ordinal='11' />
+            <column datatype='integer' name='co2A' ordinal='12' />
+            <column datatype='real' name='co2TailpipeAGpm' ordinal='13' />
+            <column datatype='real' name='co2TailpipeGpm' ordinal='14' />
+            <column datatype='integer' name='comb08' ordinal='15' />
+            <column datatype='real' name='comb08U' ordinal='16' />
+            <column datatype='integer' name='combA08' ordinal='17' />
+            <column datatype='real' name='combA08U' ordinal='18' />
+            <column datatype='real' name='combE' ordinal='19' />
+            <column datatype='real' name='combinedCD' ordinal='20' />
+            <column datatype='real' name='combinedUF' ordinal='21' />
+            <column datatype='integer' name='cylinders' ordinal='22' />
+            <column datatype='real' name='displ' ordinal='23' />
+            <column datatype='string' name='drive' ordinal='24' />
+            <column datatype='integer' name='engId' ordinal='25' />
+            <column datatype='string' name='eng_dscr' ordinal='26' />
+            <column datatype='integer' name='feScore' ordinal='27' />
+            <column datatype='integer' name='fuelCost08' ordinal='28' />
+            <column datatype='integer' name='fuelCostA08' ordinal='29' />
+            <column datatype='string' name='fuelType' ordinal='30' />
+            <column datatype='string' name='fuelType1' ordinal='31' />
+            <column datatype='integer' name='ghgScore' ordinal='32' />
+            <column datatype='integer' name='ghgScoreA' ordinal='33' />
+            <column datatype='integer' name='highway08' ordinal='34' />
+            <column datatype='real' name='highway08U' ordinal='35' />
+            <column datatype='integer' name='highwayA08' ordinal='36' />
+            <column datatype='real' name='highwayA08U' ordinal='37' />
+            <column datatype='real' name='highwayCD' ordinal='38' />
+            <column datatype='real' name='highwayE' ordinal='39' />
+            <column datatype='real' name='highwayUF' ordinal='40' />
+            <column datatype='integer' name='hlv' ordinal='41' />
+            <column datatype='integer' name='hpv' ordinal='42' />
+            <column datatype='integer' name='id' ordinal='43' />
+            <column datatype='integer' name='lv2' ordinal='44' />
+            <column datatype='integer' name='lv4' ordinal='45' />
+            <column datatype='string' name='make' ordinal='46' />
+            <column datatype='string' name='model' ordinal='47' />
+            <column datatype='string' name='mpgData' ordinal='48' />
+            <column datatype='boolean' name='phevBlended' ordinal='49' />
+            <column datatype='integer' name='pv2' ordinal='50' />
+            <column datatype='integer' name='pv4' ordinal='51' />
+            <column datatype='integer' name='range' ordinal='52' />
+            <column datatype='real' name='rangeCity' ordinal='53' />
+            <column datatype='real' name='rangeCityA' ordinal='54' />
+            <column datatype='real' name='rangeHwy' ordinal='55' />
+            <column datatype='real' name='rangeHwyA' ordinal='56' />
+            <column datatype='string' name='trany' ordinal='57' />
+            <column datatype='real' name='UCity' ordinal='58' />
+            <column datatype='real' name='UCityA' ordinal='59' />
+            <column datatype='real' name='UHighway' ordinal='60' />
+            <column datatype='real' name='UHighwayA' ordinal='61' />
+            <column datatype='string' name='VClass' ordinal='62' />
+            <column datatype='integer' name='year' ordinal='63' />
+            <column datatype='integer' name='youSaveSpend' ordinal='64' />
+            <column datatype='boolean' name='guzzler' ordinal='65' />
+            <column datatype='string' name='trans_dscr' ordinal='66' />
+            <column datatype='boolean' name='tCharger' ordinal='67' />
+            <column datatype='string' name='sCharger' ordinal='68' />
+            <column datatype='string' name='atvType' ordinal='69' />
+            <column datatype='string' name='fuelType2' ordinal='70' />
+            <column datatype='string' name='rangeA' ordinal='71' />
+            <column datatype='string' name='evMotor' ordinal='72' />
+            <column datatype='string' name='mfrCode' ordinal='73' />
+            <column datatype='string' name='c240Dscr' ordinal='74' />
+            <column datatype='real' name='charge240b' ordinal='75' />
+            <column datatype='string' name='c240bDscr' ordinal='76' />
+            <column datatype='string' name='createdOn' ordinal='77' />
+            <column datatype='string' name='modifiedOn' ordinal='78' />
+            <column datatype='string' name='startStop' ordinal='79' />
+            <column datatype='integer' name='phevCity' ordinal='80' />
+            <column datatype='integer' name='phevHwy' ordinal='81' />
+            <column datatype='integer' name='phevComb' ordinal='82' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>barrels08</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[barrels08]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>barrels08</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>barrelsA08</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[barrelsA08]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>barrelsA08</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>charge120</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[charge120]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>charge120</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>charge240</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[charge240]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>charge240</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city08</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[city08]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>city08</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city08U</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[city08U]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>city08U</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cityA08</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cityA08]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>cityA08</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cityA08U</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cityA08U]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>cityA08U</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cityCD</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cityCD]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>cityCD</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cityE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cityE]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>cityE</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cityUF</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cityUF]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>cityUF</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[co2]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>co2</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co2A</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[co2A]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>co2A</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co2TailpipeAGpm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[co2TailpipeAGpm]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>co2TailpipeAGpm</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co2TailpipeGpm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[co2TailpipeGpm]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>co2TailpipeGpm</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comb08</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[comb08]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>comb08</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comb08U</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[comb08U]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>comb08U</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>combA08</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[combA08]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>combA08</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>combA08U</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[combA08U]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>combA08U</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>combE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[combE]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>combE</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>combinedCD</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[combinedCD]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>combinedCD</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>combinedUF</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[combinedUF]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>combinedUF</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cylinders</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cylinders]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>cylinders</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>displ</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[displ]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>displ</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>drive</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[drive]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>drive</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>engId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[engId]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>engId</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eng_dscr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[eng_dscr]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>eng_dscr</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>feScore</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[feScore]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>feScore</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fuelCost08</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fuelCost08]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>fuelCost08</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fuelCostA08</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fuelCostA08]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>fuelCostA08</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fuelType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fuelType]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>fuelType</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fuelType1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fuelType1]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>fuelType1</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ghgScore</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ghgScore]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>ghgScore</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ghgScoreA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ghgScoreA]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>ghgScoreA</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>highway08</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[highway08]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>highway08</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>highway08U</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[highway08U]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>highway08U</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>highwayA08</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[highwayA08]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>highwayA08</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>highwayA08U</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[highwayA08U]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>highwayA08U</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>highwayCD</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[highwayCD]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>highwayCD</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>highwayE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[highwayE]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>highwayE</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>highwayUF</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[highwayUF]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>highwayUF</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hlv</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hlv]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>hlv</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hpv</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hpv]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>hpv</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lv2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[lv2]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>lv2</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lv4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[lv4]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>lv4</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>make</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[make]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>make</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>model</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[model]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>model</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mpgData</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mpgData]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>mpgData</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>phevBlended</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[phevBlended]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>phevBlended</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pv2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pv2]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>pv2</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pv4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pv4]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>pv4</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>range</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[range]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>range</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rangeCity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rangeCity]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>rangeCity</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rangeCityA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rangeCityA]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>rangeCityA</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rangeHwy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rangeHwy]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>rangeHwy</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rangeHwyA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rangeHwyA]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>rangeHwyA</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trany</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[trany]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>trany</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UCity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[UCity]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>UCity</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UCityA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[UCityA]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>UCityA</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UHighway</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[UHighway]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>UHighway</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UHighwayA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[UHighwayA]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>UHighwayA</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VClass</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[VClass]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>VClass</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>youSaveSpend</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[youSaveSpend]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>youSaveSpend</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>guzzler</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[guzzler]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>guzzler</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trans_dscr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[trans_dscr]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>trans_dscr</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tCharger</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[tCharger]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>tCharger</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sCharger</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sCharger]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>sCharger</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>atvType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[atvType]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>atvType</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fuelType2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fuelType2]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>fuelType2</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rangeA</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rangeA]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>rangeA</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>evMotor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[evMotor]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>evMotor</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mfrCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mfrCode]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>mfrCode</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>c240Dscr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[c240Dscr]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>c240Dscr</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>charge240b</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[charge240b]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>charge240b</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>c240bDscr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[c240bDscr]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>c240bDscr</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>createdOn</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[createdOn]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>createdOn</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>modifiedOn</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[modifiedOn]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>modifiedOn</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>startStop</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[startStop]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>startStop</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>phevCity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[phevCity]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>phevCity</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>phevHwy</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[phevHwy]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>phevHwy</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>phevComb</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[phevComb]</local-name>
+            <parent-name>[FuelEconomy-gov-VehicleData_20220907.csv]</parent-name>
+            <remote-alias>phevComb</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='U City A' datatype='real' name='[UCityA]' role='measure' type='quantitative' />
+      <column caption='U City' datatype='real' name='[UCity]' role='measure' type='quantitative' />
+      <column caption='U Highway A' datatype='real' name='[UHighwayA]' role='measure' type='quantitative' />
+      <column caption='U Highway' datatype='real' name='[UHighway]' role='measure' type='quantitative' />
+      <column caption='V Class' datatype='string' name='[VClass]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='FuelEconomy-gov-VehicleData_20220907.csv' datatype='table' name='[__tableau_internal_object_id__].[FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA]' role='measure' type='quantitative' />
+      <column caption='Atv Type' datatype='string' name='[atvType]' role='dimension' type='nominal' />
+      <column caption='Barrels08' datatype='real' name='[barrels08]' role='measure' type='quantitative' />
+      <column caption='Charge120' datatype='real' name='[charge120]' role='measure' type='quantitative' />
+      <column caption='Charge240' datatype='real' name='[charge240]' role='measure' type='quantitative' />
+      <column caption='Charge240B' datatype='real' name='[charge240b]' role='measure' type='quantitative' />
+      <column caption='City08' datatype='integer' name='[city08]' role='measure' type='quantitative' />
+      <column caption='City CD' datatype='real' name='[cityCD]' role='measure' type='quantitative' />
+      <column caption='City E' datatype='real' name='[cityE]' role='measure' type='quantitative' />
+      <column caption='City UF' datatype='real' name='[cityUF]' role='measure' type='quantitative' />
+      <column caption='Co2' datatype='integer' name='[co2]' role='measure' type='quantitative' />
+      <column caption='Comb08' datatype='integer' name='[comb08]' role='measure' type='quantitative' />
+      <column caption='Comb E' datatype='real' name='[combE]' role='measure' type='quantitative' />
+      <column caption='Combined CD' datatype='real' name='[combinedCD]' role='measure' type='quantitative' />
+      <column caption='Combined UF' datatype='real' name='[combinedUF]' role='measure' type='quantitative' />
+      <column caption='Created On' datatype='string' name='[createdOn]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Cylinders' datatype='integer' name='[cylinders]' role='dimension' type='ordinal' />
+      <column caption='Displ' datatype='real' name='[displ]' role='measure' type='quantitative' />
+      <column caption='Drive' datatype='string' name='[drive]' role='dimension' type='nominal' />
+      <column caption='Eng Id' datatype='integer' name='[engId]' role='dimension' type='ordinal' />
+      <column caption='Eng Dscr' datatype='string' name='[eng_dscr]' role='dimension' type='nominal' />
+      <column caption='Ev Motor' datatype='string' name='[evMotor]' role='dimension' type='nominal' />
+      <column caption='Fe Score' datatype='integer' name='[feScore]' role='measure' type='quantitative' />
+      <column caption='Fuel Type' datatype='string' name='[fuelType]' role='dimension' type='nominal' />
+      <column caption='Ghg Score A' datatype='integer' name='[ghgScoreA]' role='measure' type='quantitative' />
+      <column caption='Ghg Score' datatype='integer' name='[ghgScore]' role='measure' type='quantitative' />
+      <column caption='Guzzler' datatype='boolean' name='[guzzler]' role='dimension' type='nominal' />
+      <column caption='Highway08' datatype='integer' name='[highway08]' role='measure' type='quantitative' />
+      <column caption='Highway CD' datatype='real' name='[highwayCD]' role='measure' type='quantitative' />
+      <column caption='Highway E' datatype='real' name='[highwayE]' role='measure' type='quantitative' />
+      <column caption='Highway UF' datatype='real' name='[highwayUF]' role='measure' type='quantitative' />
+      <column caption='Hlv' datatype='integer' name='[hlv]' role='measure' type='quantitative' />
+      <column caption='Hpv' datatype='integer' name='[hpv]' role='measure' type='quantitative' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Lv2' datatype='integer' name='[lv2]' role='measure' type='quantitative' />
+      <column caption='Lv4' datatype='integer' name='[lv4]' role='measure' type='quantitative' />
+      <column caption='Make' datatype='string' name='[make]' role='dimension' type='nominal' />
+      <column caption='Mfr Code' datatype='string' name='[mfrCode]' role='dimension' type='nominal' />
+      <column caption='Model' datatype='string' name='[model]' role='dimension' type='nominal' />
+      <column caption='Modified On' datatype='string' name='[modifiedOn]' role='dimension' type='nominal' />
+      <column caption='Mpg Data' datatype='string' name='[mpgData]' role='dimension' type='nominal' />
+      <column caption='Phev Blended' datatype='boolean' name='[phevBlended]' role='dimension' type='nominal' />
+      <column caption='Phev City' datatype='integer' name='[phevCity]' role='measure' type='quantitative' />
+      <column caption='Phev Comb' datatype='integer' name='[phevComb]' role='measure' type='quantitative' />
+      <column caption='Phev Hwy' datatype='integer' name='[phevHwy]' role='measure' type='quantitative' />
+      <column caption='Pv2' datatype='integer' name='[pv2]' role='measure' type='quantitative' />
+      <column caption='Pv4' datatype='integer' name='[pv4]' role='measure' type='quantitative' />
+      <column caption='Range A' datatype='string' name='[rangeA]' role='dimension' type='nominal' />
+      <column caption='Range City A' datatype='real' name='[rangeCityA]' role='measure' type='quantitative' />
+      <column caption='Range City' datatype='real' name='[rangeCity]' role='measure' type='quantitative' />
+      <column caption='Range Hwy A' datatype='real' name='[rangeHwyA]' role='measure' type='quantitative' />
+      <column caption='Range Hwy' datatype='real' name='[rangeHwy]' role='measure' type='quantitative' />
+      <column caption='Range' datatype='integer' name='[range]' role='measure' type='quantitative' />
+      <column caption='S Charger' datatype='string' name='[sCharger]' role='dimension' type='nominal' />
+      <column caption='Start Stop' datatype='string' name='[startStop]' role='dimension' type='nominal' />
+      <column caption='T Charger' datatype='boolean' name='[tCharger]' role='dimension' type='nominal' />
+      <column caption='Trans Dscr' datatype='string' name='[trans_dscr]' role='dimension' type='nominal' />
+      <column caption='Trany' datatype='string' name='[trany]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column caption='You Save Spend' datatype='integer' name='[youSaveSpend]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='FuelEconomy-gov-VehicleData_20220907.csv' id='FuelEconomy-gov-VehicleData_20220907.csv_A232D754A6AB4B0DA14059DA668D8DCA'>
+            <properties context=''>
+              <relation connection='textscan.01oimge0hx2azx17wtf4k0fz9nuu' name='FuelEconomy-gov-VehicleData_20220907.csv' table='[FuelEconomy-gov-VehicleData_20220907#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='barrels08' ordinal='0' />
+                  <column datatype='real' name='barrelsA08' ordinal='1' />
+                  <column datatype='real' name='charge120' ordinal='2' />
+                  <column datatype='real' name='charge240' ordinal='3' />
+                  <column datatype='integer' name='city08' ordinal='4' />
+                  <column datatype='real' name='city08U' ordinal='5' />
+                  <column datatype='integer' name='cityA08' ordinal='6' />
+                  <column datatype='real' name='cityA08U' ordinal='7' />
+                  <column datatype='real' name='cityCD' ordinal='8' />
+                  <column datatype='real' name='cityE' ordinal='9' />
+                  <column datatype='real' name='cityUF' ordinal='10' />
+                  <column datatype='integer' name='co2' ordinal='11' />
+                  <column datatype='integer' name='co2A' ordinal='12' />
+                  <column datatype='real' name='co2TailpipeAGpm' ordinal='13' />
+                  <column datatype='real' name='co2TailpipeGpm' ordinal='14' />
+                  <column datatype='integer' name='comb08' ordinal='15' />
+                  <column datatype='real' name='comb08U' ordinal='16' />
+                  <column datatype='integer' name='combA08' ordinal='17' />
+                  <column datatype='real' name='combA08U' ordinal='18' />
+                  <column datatype='real' name='combE' ordinal='19' />
+                  <column datatype='real' name='combinedCD' ordinal='20' />
+                  <column datatype='real' name='combinedUF' ordinal='21' />
+                  <column datatype='integer' name='cylinders' ordinal='22' />
+                  <column datatype='real' name='displ' ordinal='23' />
+                  <column datatype='string' name='drive' ordinal='24' />
+                  <column datatype='integer' name='engId' ordinal='25' />
+                  <column datatype='string' name='eng_dscr' ordinal='26' />
+                  <column datatype='integer' name='feScore' ordinal='27' />
+                  <column datatype='integer' name='fuelCost08' ordinal='28' />
+                  <column datatype='integer' name='fuelCostA08' ordinal='29' />
+                  <column datatype='string' name='fuelType' ordinal='30' />
+                  <column datatype='string' name='fuelType1' ordinal='31' />
+                  <column datatype='integer' name='ghgScore' ordinal='32' />
+                  <column datatype='integer' name='ghgScoreA' ordinal='33' />
+                  <column datatype='integer' name='highway08' ordinal='34' />
+                  <column datatype='real' name='highway08U' ordinal='35' />
+                  <column datatype='integer' name='highwayA08' ordinal='36' />
+                  <column datatype='real' name='highwayA08U' ordinal='37' />
+                  <column datatype='real' name='highwayCD' ordinal='38' />
+                  <column datatype='real' name='highwayE' ordinal='39' />
+                  <column datatype='real' name='highwayUF' ordinal='40' />
+                  <column datatype='integer' name='hlv' ordinal='41' />
+                  <column datatype='integer' name='hpv' ordinal='42' />
+                  <column datatype='integer' name='id' ordinal='43' />
+                  <column datatype='integer' name='lv2' ordinal='44' />
+                  <column datatype='integer' name='lv4' ordinal='45' />
+                  <column datatype='string' name='make' ordinal='46' />
+                  <column datatype='string' name='model' ordinal='47' />
+                  <column datatype='string' name='mpgData' ordinal='48' />
+                  <column datatype='boolean' name='phevBlended' ordinal='49' />
+                  <column datatype='integer' name='pv2' ordinal='50' />
+                  <column datatype='integer' name='pv4' ordinal='51' />
+                  <column datatype='integer' name='range' ordinal='52' />
+                  <column datatype='real' name='rangeCity' ordinal='53' />
+                  <column datatype='real' name='rangeCityA' ordinal='54' />
+                  <column datatype='real' name='rangeHwy' ordinal='55' />
+                  <column datatype='real' name='rangeHwyA' ordinal='56' />
+                  <column datatype='string' name='trany' ordinal='57' />
+                  <column datatype='real' name='UCity' ordinal='58' />
+                  <column datatype='real' name='UCityA' ordinal='59' />
+                  <column datatype='real' name='UHighway' ordinal='60' />
+                  <column datatype='real' name='UHighwayA' ordinal='61' />
+                  <column datatype='string' name='VClass' ordinal='62' />
+                  <column datatype='integer' name='year' ordinal='63' />
+                  <column datatype='integer' name='youSaveSpend' ordinal='64' />
+                  <column datatype='boolean' name='guzzler' ordinal='65' />
+                  <column datatype='string' name='trans_dscr' ordinal='66' />
+                  <column datatype='boolean' name='tCharger' ordinal='67' />
+                  <column datatype='string' name='sCharger' ordinal='68' />
+                  <column datatype='string' name='atvType' ordinal='69' />
+                  <column datatype='string' name='fuelType2' ordinal='70' />
+                  <column datatype='string' name='rangeA' ordinal='71' />
+                  <column datatype='string' name='evMotor' ordinal='72' />
+                  <column datatype='string' name='mfrCode' ordinal='73' />
+                  <column datatype='string' name='c240Dscr' ordinal='74' />
+                  <column datatype='real' name='charge240b' ordinal='75' />
+                  <column datatype='string' name='c240bDscr' ordinal='76' />
+                  <column datatype='string' name='createdOn' ordinal='77' />
+                  <column datatype='string' name='modifiedOn' ordinal='78' />
+                  <column datatype='string' name='startStop' ordinal='79' />
+                  <column datatype='integer' name='phevCity' ordinal='80' />
+                  <column datatype='integer' name='phevHwy' ordinal='81' />
+                  <column datatype='integer' name='phevComb' ordinal='82' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='FuelEconomy-gov-VehicleData_20220907' name='federated.1cwbj5b1hhneja1226q7015sc1u6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cwbj5b1hhneja1226q7015sc1u6'>
+            <column datatype='real' name='[co2TailpipeAGpm]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Cylinders' datatype='integer' name='[cylinders]' role='dimension' type='ordinal' />
+            <column-instance column='[co2TailpipeAGpm]' derivation='None' name='[none:co2TailpipeAGpm:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[cylinders]' derivation='None' name='[none:cylinders:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <reference-line axis-column='[federated.1cwbj5b1hhneja1226q7015sc1u6].[none:co2TailpipeAGpm:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1cwbj5b1hhneja1226q7015sc1u6].[none:co2TailpipeAGpm:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1cwbj5b1hhneja1226q7015sc1u6].[none:co2TailpipeAGpm:qk]</rows>
+        <cols>[federated.1cwbj5b1hhneja1226q7015sc1u6].[none:cylinders:ok]</cols>
+      </table>
+      <simple-id uuid='{9B3EAAD3-DAA3-4EA9-8CEA-0F7697AD5EBF}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1cwbj5b1hhneja1226q7015sc1u6].[none:cylinders:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C7B6A836-1C18-43B9-AF5D-F3E76D3EA7FF}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      hMTafwMImIaOiy9ySwAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
