@@ -1,5 +1,5 @@
 # PREREQUISITES
-# pip isntall seaborn
+# pip install seaborn
 # pip install seaborn[stats]
 
 import pandas as pd
